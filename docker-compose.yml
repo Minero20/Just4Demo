@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Jenkins_app
+    ports:
+      - "3243:3243"
+    volumes:
+      - .:/app
