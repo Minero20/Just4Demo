@@ -8,7 +8,7 @@ Pipeline {
     stages {
         stage('Deploy') {
             steps {
-                ssh user: 'root', host: '150.95.25.8', password: '{obj,db99bd6}TTT', command: 'cd /project/Just4Demo && git pull && docker-compose build app && docker-compose up -d'
+                ssh user: 'root', host: '150.95.25.8', password: 'obj,db99bd6]TTT', command: 'cd /project/Just4Demo && git pull && docker-compose build app && docker-compose up -d'
             }
         }
     }
