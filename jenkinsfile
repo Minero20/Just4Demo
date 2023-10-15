@@ -1,18 +1,15 @@
-    Pipeline {
-        agent any
-        triggers {
-            githubPush {
-                branches "main"
-            }
+Pipeline {
+    agent any
+    triggers {
+        githubPush {
+            branches "main"
         }
-        stages {
-            stage('Deploy') {
-                steps {
-                    ssh user: 'root', 
-                        host: '150.95.25.8', 
-                        password: 'obj,db99bd6]TTT', 
-                        command: 'cd /project/Just4Demo && git pull && docker-compose build app && docker-compose up -d'
-                }
+    }
+    stages {
+        stage('Deploy') {
+            steps {
+                ssh user: 'root', host: '150.95.25.8', password: '{obj,db99bd6}TTT', command: 'cd /project/Just4Demo && git pull && docker-compose build app && docker-compose up -d'
             }
         }
     }
+}
