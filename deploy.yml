@@ -1,11 +1,11 @@
-name: Deploy to CentOS Stream 9
+name: Deploy 
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
