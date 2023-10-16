@@ -12,14 +12,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy to server
-        uses: appleboy/ssh-action@v2
-        with:
-          host: 150.95.25.8
-          username: root
-          password: obj,db99bd6]TTT
-          script: |
-            cd /project/Just4Demo
-            docker-compose down
-            docker-compose build app
-            docker-compose up -d
+      # - name: Deploy to server
+      #   uses: appleboy/ssh-action@v2
+      #   with:
+      #     host: 150.95.25.8
+      #     username: root
+      #     password: obj,db99bd6]TTT
+      #     script: |
+      #       cd /project/Just4Demo
+      #       docker-compose down
+      #       docker-compose build app
+      #       docker-compose up -d
