@@ -5,7 +5,7 @@ const app = express();
 const port = 3243;
 
 app.get('/', (req, res) => {
-    res.send('Test One Time For Make sure !!!!');
+    res.send('GitHub Action CI/CD');
 });
 
 app.listen(port, () => {
