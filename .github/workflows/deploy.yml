@@ -23,7 +23,7 @@ jobs:
       #   run: docker build -t my-app .
 
       - name: Deploy to server
-        uses: actions/ssh-script@v6
+        uses: appleboy/ssh-action@v2
         with:
           host: 150.95.25.8
           username: root
