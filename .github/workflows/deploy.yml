@@ -20,6 +20,4 @@ jobs:
           password: obj,db99bd6]TTT
           script: |
             cd /project/Just4Demo
-            docker-compose down
-            docker-compose build app
-            docker-compose up -d
+            bash install.sh
