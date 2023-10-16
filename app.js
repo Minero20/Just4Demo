@@ -5,7 +5,7 @@ const app = express();
 const port = 3243;
 
 app.get('/', (req, res) => {
-    res.send('GitHub Action CI/CD');
+    res.send('Test Github Auto Deploy');
 });
 
 app.listen(port, () => {
